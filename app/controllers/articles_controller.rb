@@ -26,7 +26,6 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    # @article.completed = params[:article][:completed] == '1'
     @article.update(article_params)
 
     redirect_to article_path(@article)
