@@ -1,8 +1,18 @@
 <div class="container">
 <div class="show-card">
-  <h1><%= @article.title %></h1>
-  <i class="fas fa-pencil-alt"></i>
-  <i class="fas fa-trash-alt"></i>
+  <ul class='show-card-list'>
+    <li><h1><%= @article.title %></h1></li>
+    <li>
+      <%= link_to edit_article_path(@article) do%>
+      <i class="fas fa-pencil-alt"></i>
+     <% end %>
+   </li>
+    <li>
+      <%= link_to article_path(@article), method: :delete, data: { confirm: "Delete #{@article.title}?" } do %>
+      <i class="fas fa-trash-alt"></i>
+      <% end %>
+    </li>
+  </ul>
 </div>
   <p><%= @article.content %></p>
 </div>

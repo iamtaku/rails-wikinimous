@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300&family=Open+Sans&display=swap');
+
+
 body {
   background-color: rgb(250,250,250);
   color: rgb(40,40,40);
@@ -7,25 +10,59 @@ body, h1, h2, h3, p {
   margin: 0;
 }
 
+h2, h1 {
+  font-family: 'Montserrat', sans-serif;
+  }
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 ul {
   padding: 0;
+  list-style: none;
 }
 
 a {
-  text-decoration: none;
   display: inline-block;
+  color: black;
+  text-decoration: none;
 }
 
+a:visited {
+  color: black;
+}
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  padding: 8px 24px;
+  background-color: #EEEEEE;
+  margin-bottom: 8px ;
+  align-items: center;
+
+}
+
+.navbar > a {
+  text-decoration: none;
 }
 
 .container {
   width: 600px;
   margin: 0 auto;
+}
+
+.article-card {
+  margin-bottom: 8px;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .1);
+  border: 0.5px solid rgba(0,0,0,0.1);
+  padding: 8px 16px;
+}
+
+.article-card > p {
+  font-style: italic;
+  padding: 8px 4px;
+  color: rgba(0,0,0,0.6);
 }
 
 .show-card {
@@ -36,3 +73,31 @@ a {
   padding-bottom: 16px;
   padding: 0 8px;
 }
+
+.show-card-list {
+  display: flex;
+  align-items: center;
+}
+
+.show-card-list > li {
+  margin-right: 8px;
+}
+
+.show-card-list a:hover {
+  color: green;
+}
+
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
