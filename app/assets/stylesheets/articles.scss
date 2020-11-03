@@ -53,6 +53,10 @@ a:visited {
   margin: 0 auto;
 }
 
+.article-container {
+  margin: 16px auto;
+}
+
 .article-card {
   margin-bottom: 8px;
   box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .1);
@@ -89,6 +93,7 @@ a:visited {
 }
 
 .btn-ghost {
+  width: 96px;
   color: #4A4A4A;
   border: 1px solid #4A4A4A;
   padding: 8px 24px;
@@ -100,5 +105,9 @@ a:visited {
 
 .btn-ghost:hover {
   opacity: 1;
+}
+
+.form-button {
+  margin-top: 8px;
 }
 
